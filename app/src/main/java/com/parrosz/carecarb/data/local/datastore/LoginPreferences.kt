@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.map
 
 class LoginPreferences (private val dataStore: DataStore<Preferences>) {
 
-    private val token = stringPreferencesKey("accessToken")
+    private val token = stringPreferencesKey("token")
     private val firstTime = booleanPreferencesKey("first_time")
 
     fun getToken(): Flow<String> {

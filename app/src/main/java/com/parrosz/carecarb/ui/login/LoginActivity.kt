@@ -59,10 +59,10 @@ class LoginActivity : AppCompatActivity() {
                             binding.porgressBar.visibility = View.INVISIBLE
                             val data = it.data
                             loginViewModel.saveToken(data.loginResult.token)
-                            Log.d("LoginActivity", "accessToken: ${data.loginResult.token}")
+                            Log.d("LoginActivity", "token: ${data.loginResult.token}")
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
-                            finish()
+                            /*finish()*/
                         }
                     }
                 }
