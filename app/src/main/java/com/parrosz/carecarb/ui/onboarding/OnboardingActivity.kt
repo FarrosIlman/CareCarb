@@ -13,7 +13,7 @@ import com.parrosz.carecarb.data.local.datastore.LoginPreferences
 import com.parrosz.carecarb.databinding.ActivityOnboardingBinding
 import com.parrosz.carecarb.ui.login.LoginActivity
 
-private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "token")
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "accessToken")
 
 class OnboardingActivity : AppCompatActivity() {
     private val binding: ActivityOnboardingBinding by lazy {

@@ -15,9 +15,10 @@ import com.parrosz.carecarb.MainActivity
 import com.parrosz.carecarb.R
 import com.parrosz.carecarb.data.Result
 import com.parrosz.carecarb.databinding.ActivityLoginBinding
+import com.parrosz.carecarb.ui.onboarding.OnboardingActivity
 import com.parrosz.carecarb.ui.register.RegisterActivity
 
-private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "token")
+private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "accessToken")
 
 class LoginActivity : AppCompatActivity() {
     private val binding: ActivityLoginBinding by lazy {
@@ -58,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
                             binding.porgressBar.visibility = View.INVISIBLE
                             val data = it.data
                             loginViewModel.saveToken(data.loginResult.token)
-                            Log.d("LoginActivity", "Token: ${data.loginResult.token}")
+                            Log.d("LoginActivity", "accessToken: ${data.loginResult.token}")
                             val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
                             finish()
@@ -81,20 +82,19 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-/*
-    override fun onResume() {
+    /*override fun onResume() {
         super.onResume()
         initialCheck()
     }
 
     private fun initialCheck() {
-        *//*loginViewModel.observe(this) {
+        loginViewModel.observe(this) {
             if (it) {
                 val intent = Intent(this, OnboardingActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
                 finish()
             }
-        }*//*
+        }
     }*/
 }

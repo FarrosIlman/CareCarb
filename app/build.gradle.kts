@@ -20,7 +20,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "BASE_URL", "\"https://story-api.dicoding.dev/v1/\"")
+        buildConfigField("String", "BASE_URL", "\"https://backend-for-user-data-grluz5ersa-et.a.run.app/users/\"")
     }
 
     buildTypes {
@@ -46,6 +46,7 @@ android {
 }
 
 dependencies {
+    implementation ("androidx.navigation:navigation-ui-ktx:2.3.5")
     implementation ("androidx.core:core-ktx:1.7.0")
     implementation ("androidx.appcompat:appcompat:1.4.1")
     implementation ("com.google.android.material:material:1.5.0")

@@ -21,6 +21,13 @@ class RegisterActivity : AppCompatActivity() {
         RegisterViewModel.RegisterViewModelFactory.getInstance(this)
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
+
+        setupView()
+    }
+
     private fun setupView() {
         supportActionBar?.setDisplayShowHomeEnabled(true)
         binding.btSignup.setOnClickListener {
@@ -73,8 +80,4 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
-    }
 }
