@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterActivity">
+
+        <LinearLayout
+            android:id="@+id/llTopText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvCreateAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Your Account"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvStartJourney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="12sp"
+                android:textColor="#C7C9D9"
+                android:text="Create your account to start your journey" />
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_animation"
+        android:layout_width="338dp"
+        android:layout_height="224dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Full Name"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/llFullName"
+        app:layout_constraintStart_toStartOf="@+id/llFullName" />
+
+    <LinearLayout
+        android:id="@+id/llFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/iv_animation"
+        app:layout_constraintBottom_toTopOf="@id/edEmail_login"
+        app:layout_constraintStart_toStartOf="@id/edEmail_login"
+        app:layout_constraintEnd_toEndOf="@id/edEmail_login">
+
+        <com.parrosz.carecarb.ui.customview.EditText
+            android:id="@+id/edFirstName"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:background="@drawable/rounded_button"
+            android:hint="@string/first_name"
+            android:fontFamily="@font/poppins_light"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"/>
+
+        <com.parrosz.carecarb.ui.customview.EditText
+            android:id="@+id/edLastName"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/poppins_light"
+            android:hint="@string/last_name"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/edEmail_login"
+        app:layout_constraintStart_toStartOf="@id/edEmail_login"
+        android:layout_marginBottom="5dp" />
+
+    <com.parrosz.carecarb.ui.customview.EditText
+        android:id="@+id/edEmail_login"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:background="@drawable/rounded_button"
+        android:hint="@string/masukkan_email"
+        android:fontFamily="@font/poppins_light"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_animation"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Password"
+        android:fontFamily="@font/poppins_medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/ed_password_login"
+        app:layout_constraintStart_toStartOf="@id/ed_password_login"
+        app:layout_constraintTop_toBottomOf="@id/edEmail_login"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <com.parrosz.carecarb.ui.customview.EditText
+        android:id="@+id/ed_password_login"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:background="@drawable/rounded_button"
+        android:hint="@string/Masukkan_password"
+        android:fontFamily="@font/poppins_light"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/edEmail_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edEmail_login"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+    <com.parrosz.carecarb.ui.customview.Button
+        android:id="@+id/bt_signup"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:text="@string/create_account"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password_login"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_signup" />
+
+    <ProgressBar
+        android:id="@+id/porgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">CareCarb</string>
+
+    <!--string for onboarding screen-->
+    <string name="title_screen_first">Welcome to CareCarb!</string>
+    <string name="desc_screen_first">Manage your daily habits effortlessly with CareCarb to reduce your carbon footprint. Start your environmental journey today!</string>
+
+    <string name="title_screen_second">Made Easy with CareCarb</string>
+    <string name="desc_screen_second">CareCarb guides you in turning everyday habits into meaningful actions for the environment. Discover practical steps to minimize your carbon emissions.</string>
+
+    <string name="title_screen_third">Embrace a Greener Future </string>
+    <string name="desc_screen_third"> Let\'s make the world a better place. Embrace a more sustainable and impactful lifestyle!</string>
+
+    <!--string for button onboarding screen-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="get_started">Getting Started</string>
+    <string name="password_minimum_character">Minimum password 8 character</string>
+    <string name="signup">Don\'t have an account yet? Sign Up</string>
+    <string name="masukkan_email">Enter Your Email</string>
+    <string name="Masukkan_password">Enter Password Here</string>
+    <string name="signin">Already have account? Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="title_home">Home</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_user">Welcome, $d!</string>
+    <string name="date">19 Dec 2023</string>
+    <string name="logout">Logout</string>
+    <string name="take_a_picture">Take a Picture</string>
+    <string name="rotate_camera">Rotate Camera</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="take_picture">Take a Picture</string>
+    <string name="upload">Upload</string>
+    <string name="food_picture">Food Picture</string>
+    <string name="save">Save</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_cannot_empty">Email cannot be empty</string>
+    <string name="password_minimum">Password must be at least 8 characters</string>
+    <string name="name_cannot_empty">Name Cannot Empty</string>
+    <string name="register_successful">Register Successful</string>
+</resources>
